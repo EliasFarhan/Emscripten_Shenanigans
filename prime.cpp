@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <chrono>
-#include "prime_number.h"
+#include "math_header.h"
 
 int main(int argc, char** argv)
 {
@@ -18,7 +18,7 @@ int main(int argc, char** argv)
 	
 	
 	std::cout << "Is prime1: "<<is_prime1<<" dt: "<< dt1.count()
-		<< "\nIs prime2: "<<is_prime2<<" dt: "<< dt2.count()<<'\n'<<
+		<< "ms\nIs prime2: "<<is_prime2<<" dt: "<< dt2.count()<<"ms\n"<<
 		"WASM vs JS: "<<dt2.count()/dt1.count()<<"x faster \n";
 	
 	return EXIT_SUCCESS;

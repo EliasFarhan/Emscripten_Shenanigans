@@ -14,4 +14,11 @@ mergeInto(LibraryManager.library,
 		}
 		return true;
 	},
+	average_js: function(numbers)
+	{
+		console.log(typeof numbers);
+
+		console.log(numbers);
+		return numbers.reduce((a, b) => a + b) / numbers.length;
+	},
 });
